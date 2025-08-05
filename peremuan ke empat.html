@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Pendaftaran Ekskul</title>
+</head>
+<body>
+
+  <h1>Formulir Pendaftaran Ekskul</h1>
+
+  <form action="proses.php" method="POST" enctype="multipart/form-data">
+    
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="kelas">Kelas:</label><br>
+    <input type="text" id="kelas" name="kelas" required><br><br>
+
+    <label for="jurusan">Jurusan:</label><br>
+    <input type="text" id="jurusan"name="jurusan" required><br><br>
+
+    <label>Ekskul yang diminati:</label><br>
+    <input type="checkbox" name="ekskul[]" value="Pramuka" required> Pramuka
+    <input type="checkbox" name="ekskul[]" value="Paskibra"> Paskibra
+    <input type="checkbox" name="ekskul[]" value="Futsal"> Futsal
+    <input type="checkbox" name="ekskul[]" value="Teater"> Teater
+    <input type="checkbox" name="Eskul[]" value="RPL">RPL
+    <br><br>
+
+    <label for="foto">Upload Foto Siswa:</label><br>
+    <input type="file" name="foto" accept="image/*" required><br><br>
+
+    <label for="minat">Deskripsi Minat & Bakat:</label><br>
+    <textarea name="minat" id="minat" rows="4" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Kirim">
+
+  </form>
+
+</body>
+</html>

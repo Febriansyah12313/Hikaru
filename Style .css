@@ -1,0 +1,19 @@
+body {
+    background-color: #fffbe7;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
